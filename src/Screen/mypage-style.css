@@ -1,0 +1,157 @@
+.date-frame {
+  width: 909px;
+  height: 105;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  
+  overflow: hidden;
+}
+
+.date-text {
+  font-size: 45px;
+  font-weight: 800;
+  color: white;
+  text-decoration: underline;
+}
+
+.week-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.input-frame {
+  width: 909px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  overflow: hidden;
+  border-radius: 100px;
+  background-color: #7eb77f;
+}
+.input {
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 45px;
+  border: none;
+  font-weight: 700;
+  background: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.total-frame {
+  height: 125px;
+  width: 125px;
+  display: flex;
+  border-radius: 100px;
+  background-color: #7eb77f;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  font-weight: 800;
+  margin-left: 25px;
+}
+
+.input-frame-2 {
+  width: 909px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  overflow: hidden;
+  border-radius: 100px;
+  background-color: white;
+}
+
+.input-2 {
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+
+  font-size: 45px;
+
+  font-weight: 700;
+
+  color: #b0b0b0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+.total-frame-2 {
+  height: 125px;
+  width: 125px;
+  display: flex;
+  border-radius: 100px;
+  background-color: white;
+  color: #b0b0b0;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  font-weight: 800;
+  margin-left: 25px;
+}
+
+.money-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 74px;
+}
+
+.save-button-active{
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-radius: 100px;
+  background-color: #7EB77F;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.save-button-nonactive {
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-radius: 100px;
+  background-color: #212121;
+  font-size: 30px;
+  font-weight: 700;
+  color: #7EB77F;
+}
+
+.momey-button{
+  background: none;
+  border: none;
+  color:#7EB77F;
+  font-size: 45px;
+  font-weight: 800;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+}
+
+

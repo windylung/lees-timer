@@ -1,0 +1,42 @@
+.input-wrapper {
+    width: 289px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .gray-color {
+    color: #909090;  /* 회색 */
+  }
+  
+  .black-color {
+    color: #000000;  /* 검은색 */
+  }
+  
+
+.login-button {
+    width: 198px;
+    height: 70px;
+    align-self: self-end;
+    border-radius: 50px;
+    border: none;
+    background-color: #7eb77f;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+  height: 101px;
+  width: 244px;
+  margin-bottom: 55px;
+}
