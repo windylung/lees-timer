@@ -70,9 +70,9 @@ const Dashboard = () => {
       setFriendMoneyVal(friendMoneyResponse.data["moneyVal"]);
       setFriendName(friendMoneyResponse.data["name"]);
       
-      if (myMoneyVal = -1 ){
+      if (myMoneyVal === -1 ){
         Swal.fire("", "사용자가 목표 시간을 설정하지 않았습니다.", "info");
-      } else if (friendMoneyVal = -1 ){
+      } else if (friendMoneyVal === -1 ){
         Swal.fire("", "친구가 목표 시간을 설정하지 않았습니다.", "info");
       }
     } catch (error) {
@@ -103,7 +103,7 @@ const Dashboard = () => {
           }}
         >
           <div style={{ marginBottom: 10 }}>{myName}</div>
-          <div>₩{myMoneyVal = -1 ? 0 : myMoneyVal}</div>
+          <div>₩{myMoneyVal === -1 ? 0 : myMoneyVal}</div>
         </MyCircle>
         <FriendCircle
           initial={{ scale: 0.3, opacity: 0 }}
@@ -115,7 +115,7 @@ const Dashboard = () => {
           }}
         >
           <div style={{ marginBottom: 10 }}>{friendName}</div>
-          <div>₩{friendMoneyVal = -1 ? 0 : friendMoneyVal}</div>
+          <div>₩{friendMoneyVal === -1 ? 0 : friendMoneyVal}</div>
         </FriendCircle>
       </div>
     </div>
