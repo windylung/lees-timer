@@ -100,7 +100,7 @@ export const MyPage = () => {
     ];
     console.log(formattedDate);
     await axios
-      .post("/get/target", userData)
+      .post("/api/get/target", userData)
       .then((response) => {
         // console.log(response.status, response.data);
         setTargetWeekValue(days.map((day) => response.data[day]));
@@ -110,7 +110,7 @@ export const MyPage = () => {
       });
 
     await axios
-      .post("/get/actual", userData)
+      .post("/api/get/actual", userData)
       .then((response) => {
         setActualWeekValue(days.map((day) => response.data[day]));
       })
@@ -139,7 +139,7 @@ export const MyPage = () => {
 
     try {
       axios
-        .post("/save", userData)
+        .post("/api/save", userData)
         .then((response) => {
           Swal.fire("", "저장되었습니다", "success");
         })

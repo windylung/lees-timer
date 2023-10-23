@@ -62,11 +62,11 @@ const Dashboard = () => {
       keyDate: state,
     };
     try {
-      const myMoneyResponse = await axios.post("/money/my", userData);
+      const myMoneyResponse = await axios.post("api/money/my", userData);
       setMyMoneyVal(myMoneyResponse.data["moneyVal"]);
       setMyName(myMoneyResponse.data["name"]);
 
-      const friendMoneyResponse = await axios.post("/money/friend", userData);
+      const friendMoneyResponse = await axios.post("api/money/friend", userData);
       setFriendMoneyVal(friendMoneyResponse.data["moneyVal"]);
       setFriendName(friendMoneyResponse.data["name"]);
     } catch (error) {

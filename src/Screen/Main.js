@@ -10,7 +10,7 @@ export const Main = () => {
     };
     try {
       axios
-        .post("/login", userData)
+        .post("/api/login", userData)
         .then((response) => {
           Swal.fire("", "로그인에 성공하였습니다", "success");
 
@@ -47,7 +47,7 @@ export const Main = () => {
     };
     try {
       axios
-        .post("/save", userData)
+        .post("/api/save", userData)
         .then((response) => {
           console.log(response.status, response.data);
           Swal.fire("", "저장되었습니다", "success");

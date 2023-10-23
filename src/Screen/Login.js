@@ -13,7 +13,7 @@ const Login = () => {
     };
     
     await axios
-      .post("/login", userData)
+      .post("/api/login", userData)
       .then((response) => {
         console.log(response);
         sessionStorage.setItem("userId", response.data.userId);
