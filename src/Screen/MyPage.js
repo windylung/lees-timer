@@ -227,7 +227,7 @@ export const MyPage = () => {
           {targetWeekValue.map((value, index) => (
             
             <input
-              readOnly={true}
+              readOnly
               key={index}
               value={value}
               onChange={(e) => {
