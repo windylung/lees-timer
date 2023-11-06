@@ -17,6 +17,8 @@ export const MyPage = () => {
   const [totalActualVal, setTotalActualVal] = useState(0);
   const [actualWeekValue, setActualWeekValue] = useState(Array(7).fill(0));
   const [isChange, setIsChange] = useState(false);
+  // input readOnly
+  const [isReadOnly, setIsReadOnly] = useState(true);
   const [moneyVal, setMoneyVal] = useState(0);
   const moneyPerHour = 12000;
   const maxHourPerDay = 12;
@@ -54,6 +56,10 @@ export const MyPage = () => {
       monday.setDate(monday.getDate() - 6); // 지난 주 월요일로 설정
     } else {
       monday.setDate(monday.getDate() - (today - 1)); // 이번 주 월요일로 설정
+    }
+
+    if (today === 1){
+      setIsReadOnly(false);
     }
 
     const dates = [];
@@ -227,7 +233,8 @@ export const MyPage = () => {
           {targetWeekValue.map((value, index) => (
             
             <input
-              readOnly
+              readOnly = {isReadOnly ? true : false}
+              // disabled ={true}
               key={index}
               value={value}
               onChange={(e) => {
